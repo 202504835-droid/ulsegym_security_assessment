@@ -1,0 +1,8 @@
+services:
+  pulsegym:
+    build: .
+    ports:
+      - "127.0.0.1:5000:5000"   # only reachable from your own machine
+    environment:
+      PULSEPAY_SECRET: local-test-secret
+      SECRET_KEY: super-secret-random-key-2024!
